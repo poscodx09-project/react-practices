@@ -2,11 +2,13 @@ import React from 'react';
 import MyComponent from './MyComponent';
 
 function App() {
+
     return (
         <div id={'App'}>
             <MyComponent
-                props02={undefined}
-                props03={undefined} 
+                props01={12}
+                props02={'hello'}
+                props03={new Date().toLocaleTimeString()}
                 props04={undefined}
                 props05={undefined}
                 props06={undefined}
