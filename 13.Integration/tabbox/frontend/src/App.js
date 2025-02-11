@@ -1,10 +1,16 @@
 import React from 'react';
-import './assets/scss/App.scss';
+import './assets/css/styles.css';
+import data from './assets/json/data';
+
+import TabBox from "./TabBox";
 
 function App(props) {
+
+    const sortedData = [...data].sort((a, b) =>  b.no - a.no);
+
     return (
         <div id={'App'}>
-             Tabox 과제
+            <TabBox data={sortedData} />
         </div>
     );
 }

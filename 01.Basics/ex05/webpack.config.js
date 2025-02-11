@@ -19,7 +19,7 @@ module.exports = {
     },     
     devServer: {
         host: '0.0.0.0',
-        port: 9090,
+        port: 3000,
         static: {
             directory: path.resolve('public'),
             watch: true

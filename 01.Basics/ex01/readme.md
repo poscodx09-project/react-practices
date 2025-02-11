@@ -34,7 +34,7 @@
 
 4. Application
 
-    public/app.js
+    public/App.js
 
 5. Test
 
