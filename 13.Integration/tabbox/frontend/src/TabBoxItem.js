@@ -1,12 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function TabBoxItem({ name, isActive, onClick }) {
+
 
     return (
         <li
             onClick={onClick}
-            style={{backgroundColor: isActive ? '#fc6' : '#ccc'}}
-        >
+            style={{backgroundColor: isActive ? '#fc6' : '#ccc'}}>
             {name}
         </li>
     );
