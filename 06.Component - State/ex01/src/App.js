@@ -8,7 +8,7 @@ function App() {
             <h2>ex04 - Component State?</h2>
             <Incrementor01 />
             <br/>
-            <Incrementor02 />
+            <Incrementor02 val={0} step={10} />
         </>
     );
 }

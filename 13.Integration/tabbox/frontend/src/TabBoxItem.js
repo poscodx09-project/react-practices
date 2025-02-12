@@ -1,8 +1,12 @@
 import React from 'react';
 
 function TabBoxItem({ name, isActive, onClick }) {
+
     return (
-        <li className={isActive ? 'active' : ''} onClick={onClick}>
+        <li
+            onClick={onClick}
+            style={{backgroundColor: isActive ? '#fc6' : '#ccc'}}
+        >
             {name}
         </li>
     );

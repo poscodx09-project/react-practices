@@ -7,7 +7,7 @@ export default class TitelBar01 extends Component {
     render() {
         return (
             <div>
-                <h4>
+                <h4 onClick={}>
                     Function Handler in Class Component(click here!)
                 </h4>
             </div>

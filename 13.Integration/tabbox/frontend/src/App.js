@@ -1,7 +1,7 @@
 import React from 'react';
-import './assets/css/styles.css';
+// import './assets/css/styles.css';
 import data from './assets/json/data';
-
+import './assets/scss/App.scss';
 import TabBox from "./TabBox";
 
 function App(props) {

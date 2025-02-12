@@ -14,7 +14,7 @@ ul, ol, dl {
 }
 
 body {
-    font-family: 'Space Mono', monospace; 
+    font-family: 'Space Mono', monospace;
     display: flex;
     flex-direction: column;
     padding: 32px;

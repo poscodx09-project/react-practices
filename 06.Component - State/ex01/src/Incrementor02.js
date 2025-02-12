@@ -1,13 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-function Incrementor02() {
+function Incrementor02({step,val}) {
+    const [cnt,setCnt] = useState(0);
     return (
         <div>
-            <button>{'+'}</button>
+            <button
+                onClick={()=>{
+                    setCnt(cnt + 1);
+                }}
+            >
+                {'+'}</button>
             {' '}
-            { 0 }
+            { cnt }
             {' '}
-            <button>{'-'}</button>
+            <button
+                onClick={()=>{
+                    setCnt(cnt + 1);
+                }}
+            >
+                {'-'}</button>
         </div>
     );
 }

@@ -1,14 +1,11 @@
-import React,{useState} from 'react';
-import TabBox from "./TabBox";
-import data from "./assets/json/data";
-import TabView from "./TabView";
+import React from 'react';
 import TabBoxItem from "./TabBoxItem";
+import {Tabs_Style} from './assets/scss/Tabs.scss';
 
-function Tabs({data,activeIndex,setActiveIndex}) {
-    // const [activeIndex, setActiveIndex] = useState(0); // 기본 선택: 첫 번째 메뉴
+function Tabs({data, activeIndex,setActiveIndex}) {
 
     return (
-        <ul>
+        <ul className={Tabs_Style}>
             {data.map((tab, index) => (
                 <TabBoxItem
                     key={tab.no} // `no`를 key로 사용
