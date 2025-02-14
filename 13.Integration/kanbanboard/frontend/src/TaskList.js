@@ -9,7 +9,7 @@ function TaskList({ tasks, onToggle }) {
                     <Task key={task.no} task={task} onToggle={onToggle}/>
                 ))}
             </ul>
-            <input className={Input_Add_Task} type={"text"} placeholder="태스크 추가" />
+            <input className={Input_Add_Task} type="text" placeholder="태스크 추가" />
         </div>
     );
 }

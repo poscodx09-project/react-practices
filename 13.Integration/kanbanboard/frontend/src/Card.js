@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import TaskList from './TaskList';
-import {_Card,Card_Title,Card_Title_Open} from './assets/scss/Card.scss'; // SCSS Modules 적용
+import * as styles from './assets/scss/Card.scss'; // SCSS Modules 적용
 
 function Card({ card }) {
     const [tasks, setTasks] = useState(card.tasks);
@@ -12,8 +12,8 @@ function Card({ card }) {
     };
 
     return (
-        <div className={_Card}>
-            <div className={`${Card_Title} ${card.tasks.length > 0 ? Card_Title_Open : ''}`}>
+        <div className={styles._Card}>
+            <div className={`${styles.Card_Title} ${card.tasks.length > 0 ? styles.Card_Title_Open : ''}`}>
                 {card.title}
             </div>
             <div>
