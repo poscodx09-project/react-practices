@@ -14,6 +14,7 @@
 .Card_Title {
   font-weight: bold;
   border-bottom: solid 5px transparent;
+  cursor: pointer;
 
   &::before {
     display: inline-block;
@@ -23,5 +24,9 @@
 
   &.Card_Title_Open::before {
     content: '▾';
+  }
+
+  &:hover {  // ✅ 마우스 오버 효과 추가 가능
+    color: #007bff; // (선택 사항) 마우스 오버 시 색상 변경
   }
 }

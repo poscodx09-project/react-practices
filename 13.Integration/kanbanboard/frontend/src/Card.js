@@ -18,7 +18,7 @@ function Card({ card }) {
             </div>
             <div>
                 {card.description}
-                {card.tasks.length > 0 && <TaskList tasks={tasks} onToggle={toggleTask} />}
+                <TaskList tasks={card.tasks || []} onToggle={toggleTask} />
             </div>
         </div>
     );
